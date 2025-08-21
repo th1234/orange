@@ -17,8 +17,9 @@ CALLS_APP_ID = "760a3d269dd2ead6a4f0f4ae2ab9bfe5"
 name = "rooms"
 class_name = "ChatRoom"
 
-[migrations]
-# Wrangler will manage this section automatically after you run migration commands.
+[[migrations]]
+tag = "v1" # Should be unique for each entry
+new_classes = ["ChatRoom"]
 
 
 # The necessary secrets are:
