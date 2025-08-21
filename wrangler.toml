@@ -8,7 +8,7 @@ compatibility_flags = ["nodejs_compat"]
   bucket = "./public"
 
 [vars]
-CALLS_APP_ID = "YOUR_CALLS_SFU_APP_ID_HERE"
+CALLS_APP_ID = "760a3d269dd2ead6a4f0f4ae2ab9bfe5"
 
 # Optional vars
 # OPENAI_MODEL_ENDPOINT = ""
