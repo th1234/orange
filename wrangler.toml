@@ -17,11 +17,9 @@ CALLS_APP_ID = "760a3d269dd2ead6a4f0f4ae2ab9bfe5"
 name = "rooms"
 class_name = "ChatRoom"
 
-# Indicate that you want the ChatRoom class to be callable as Durable Objects.
-[[migrations]]
-tag = "v1" # Should be unique for each entry
-new_sqlite_classes =
-new_classes = ["ChatRoom"]
+[migrations]
+# Wrangler will manage this section automatically after you run migration commands.
+
 
 # The necessary secrets are:
 # - CALLS_APP_SECRET
