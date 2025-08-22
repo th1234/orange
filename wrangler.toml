@@ -1,24 +1,17 @@
 name = "orange-meets"
-# https://developers.cloudflare.com/workers/platform/compatibility-dates
 compatibility_date = "2024-10-07"
 main = "./build/index.js"
 compatibility_flags = ["nodejs_compat"]
 
-[site]
-  bucket = "./public"
-
 [vars]
 CALLS_APP_ID = "760a3d269dd2ead6a4f0f4ae2ab9bfe5"
-
-# Optional vars
-# OPENAI_MODEL_ENDPOINT = ""
 
 [[durable_objects.bindings]]
 name = "rooms"
 class_name = "ChatRoom"
 
 [[migrations]]
-tag = "v1" # Should be unique for each entry
+tag = "v1"
 new_classes = ["ChatRoom"]
 
 
