@@ -3,6 +3,9 @@ compatibility_date = "2024-10-07"
 main = "./build/index.js"
 compatibility_flags = ["nodejs_compat"]
 
+[site]
+bucket = "./public"
+
 [vars]
 CALLS_APP_ID = "760a3d269dd2ead6a4f0f4ae2ab9bfe5"
 
