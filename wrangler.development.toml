@@ -59,7 +59,7 @@ database_id = "6b0eceef-c836-4ba7-aac2-fa9b6f702e3b"
 # Indicate that you want the ChatRoom and RateLimiter classes to be callable as Durable Objects.
 [[migrations]]
 tag = "v1" # Should be unique for each entry
-new_classes = ["ChatRoom", "RateLimiter"]
+new_sqlite_classes = ["ChatRoom", "RateLimiter"]
 
 [[migrations]]
 tag = "v2"
