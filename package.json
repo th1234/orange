@@ -47,8 +47,8 @@
 		"@radix-ui/react-tooltip": "^1.1.2",
 		"@radix-ui/react-visually-hidden": "^1.1.0",
 		"@reactivex/rxjs": "^6.6.7",
-		"@remix-run/cloudflare": "2.11.1",
-		"@remix-run/react": "2.11.1",
+		"@remix-run/cloudflare": "^2.17.0",
+		"@remix-run/react": "^2.17.0",
 		"clsx": "^2.1.1",
 		"cookie": "^0.6.0",
 		"drizzle-orm": "^0.33.0",
@@ -73,8 +73,8 @@
 		"@cloudflare/workers-types": "^4.20240806.0",
 		"@peculiar/webcrypto": "^1.5.0",
 		"@playwright/test": "^1.46.1",
-		"@remix-run/dev": "2.11.1",
-		"@remix-run/eslint-config": "2.11.1",
+		"@remix-run/dev": "^2.17.0",
+		"@remix-run/eslint-config": "^2.17.0",
 		"@types/react": "^18.3.3",
 		"@types/react-dom": "^18.3.0",
 		"better-sqlite3": "^11.3.0",
@@ -92,6 +92,12 @@
 		"wrangler": "^4.32.0"
 	},
 	"overrides": {
+		"@remix-run/dev": {
+			"wrangler": "^4.32.0"
+		},
+		"@remix-run/cloudflare": {
+			"wrangler": "^4.32.0"
+		},
 		"msw": {
 			"typescript": "$typescript"
 		},
