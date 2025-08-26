@@ -30,7 +30,7 @@
 	},
 	"dependencies": {
 		"@heroicons/react": "^2.1.5",
-		"@mediapipe/selfie_segmentation": "^0.1.1675465747",
+		"@mediapipe/selfie_segmentation": "^1.0.0",
 		"@tensorflow/tfjs-converter": "^4.17.0",
 		"@tensorflow/tfjs-backend-webgl": "^4.17.0",
 		"@tensorflow/tfjs-core": "^4.17.0",

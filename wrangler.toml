@@ -3,6 +3,24 @@ compatibility_date = "2024-10-07"
 main = "./build/index.js"
 compatibility_flags = ["nodejs_compat"]
 
+[build]
+command = "npm run build"
+
+[[rules]]
+type = "ESModule"
+globs = ["**/@mediapipe/selfie_segmentation/**/*"]
+fallthrough = true
+
+[[rules]]
+type = "ESModule"
+globs = ["**/@tensorflow/**/*"]
+fallthrough = true
+
+[[rules]]
+type = "ESModule"
+globs = ["**/@tensorflow-models/**/*"]
+fallthrough = true
+
 [site]
 bucket = "./public"
 

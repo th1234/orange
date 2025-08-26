@@ -9,9 +9,20 @@ compatibility_flags = ["nodejs_compat"]
 [site]
   bucket = "./public"
 
-[[build.upload.rules]]
+[[rules]]
 type = "ESModule"
-globs = ["**/*.js"]
+globs = ["**/@mediapipe/selfie_segmentation/**/*"]
+fallthrough = true
+
+[[rules]]
+type = "ESModule"
+globs = ["**/@tensorflow/**/*"]
+fallthrough = true
+
+[[rules]]
+type = "ESModule"
+globs = ["**/@tensorflow-models/**/*"]
+fallthrough = true
 
 [[kv_namespaces]] 
 binding = "FEEDBACK_STORAGE"

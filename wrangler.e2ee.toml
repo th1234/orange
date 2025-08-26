@@ -9,9 +9,20 @@ compatibility_flags = ["nodejs_compat"]
 [site]
   bucket = "./public"
 
-[[build.upload.rules]]
+[[rules]]
 type = "ESModule"
-globs = ["**/*.js"]
+globs = ["**/@mediapipe/selfie_segmentation/**/*"]
+fallthrough = true
+
+[[rules]]
+type = "ESModule"
+globs = ["**/@tensorflow/**/*"]
+fallthrough = true
+
+[[rules]]
+type = "ESModule"
+globs = ["**/@tensorflow-models/**/*"]
+fallthrough = true
 
 [vars]
 CALLS_APP_ID = "5e6ca5ca9db8b1c4bb0c3eadffc180f0"
